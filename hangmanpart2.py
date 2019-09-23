@@ -60,7 +60,6 @@ def is_word_guessed(secret_word, letters_guessed):
     returns: boolean, True if all the letters of secret_word are in letters_guessed;
       False otherwise
     '''
-    # FILL IN YOUR CODE HERE AND DELETE "pass"
     answer = True
     for char in secret_word:
         if char in letters_guessed:
@@ -97,7 +96,6 @@ def get_available_letters(letters_guessed):
     returns: string (of letters), comprised of letters that represents which letters have not
       yet been guessed.
     '''
-    # FILL IN YOUR CODE HERE AND DELETE "pass"
     letters_left_str = "abcdefghijklmnopqrstuvwxyz"
     letters_left_list = list(letters_left_str)
     for char in letters_guessed:
@@ -133,7 +131,6 @@ def hangman(secret_word):
     
     Follows the other limitations detailed in the problem write-up.
     '''
-    # FILL IN YOUR CODE HERE AND DELETE "pass"
     guesses_remaining = 6
     warnings_remaining = 3
     letters_guessed = []
@@ -192,10 +189,6 @@ if __name__ == "__main__":
     I don't know what this line does, it was given in the problem set
     The file word.txt was, too
     """
-    # pass
-
-    # To test part 2, comment out the pass line above and
-    # uncomment the following two lines.
     
     secret_word = choose_word(wordlist)
     hangman(secret_word)
